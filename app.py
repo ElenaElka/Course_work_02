@@ -33,4 +33,5 @@ def search_username(username):
     find_posts = find_username(username)
     return render_template('user-feed.html', posts=find_posts)
 
+
 app.run()
