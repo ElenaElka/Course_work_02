@@ -1,5 +1,5 @@
 import os
-port = int(os.environ.get('PORT', 5000))
+port = int(os.environ.get('PORT', 8000))
 from flask import Flask, render_template, request
 
 from functions import *
