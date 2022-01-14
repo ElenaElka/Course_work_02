@@ -1,3 +1,5 @@
+import os
+port = int(os.environ.get('PORT', 5000))
 from flask import Flask, render_template, request
 
 from functions import *
@@ -34,4 +36,4 @@ def search_username(username):
     return render_template('user-feed.html', posts=find_posts)
 
 
-app.run()
+app.run(host='0.0.0.0', port=port, debug=True)
